@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-[#1a2b5e] text-white">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
           
           {/* Left Column - Logo & Description */}
@@ -65,7 +65,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <svg 
                   viewBox="0 0 24 24" 
-                  className="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5"
+                  className="w-4 h-4 text-gray-300 shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -86,7 +86,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <svg 
                   viewBox="0 0 24 24" 
-                  className="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5"
+                  className="w-4 h-4 text-gray-300 shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -108,7 +108,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <svg 
                   viewBox="0 0 24 24" 
-                  className="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5"
+                  className="w-4 h-4 text-gray-300 shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"

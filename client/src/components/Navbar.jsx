@@ -97,13 +97,13 @@ const Navbar = () => {
             
             {/* Mobile Hamburger Menu */}
             <button 
-              className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px] rounded-full hover:bg-gray-50 transition-colors duration-300 bg-transparent border-none cursor-pointer"
+              className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.25 rounded-full hover:bg-gray-50 transition-colors duration-300 bg-transparent border-none cursor-pointer"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
             >
               <span 
                 className={`block w-5 h-0.5 bg-[#1a1a2e] rounded-sm transition-all duration-300 ${
-                  isMenuOpen ? 'rotate-45 translate-y-[7px]' : ''
+                  isMenuOpen ? 'rotate-45 translate-y-1.75' : ''
                 }`} 
               />
               <span 
@@ -113,7 +113,7 @@ const Navbar = () => {
               />
               <span 
                 className={`block w-5 h-0.5 bg-[#1a1a2e] rounded-sm transition-all duration-300 ${
-                  isMenuOpen ? '-rotate-45 -translate-y-[7px]' : ''
+                  isMenuOpen ? '-rotate-45 -translate-y-1.75' : ''
                 }`} 
               />
             </button>
@@ -126,7 +126,7 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       <div 
         className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+          isMenuOpen ? 'max-h-100 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-4 pb-6 pt-2 border-t border-gray-100">
