@@ -1,17 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Courses from './pages/Courses';
+import CourseDetails from './pages/CourseDetails';
+
 function App() {
   return (
-    <>
-      <Navbar />
-       <main className="grow">
-        <Home />
-      </main>
-      <Footer/>
-    </>
-  )
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/course/:id" element={<CourseDetails />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
