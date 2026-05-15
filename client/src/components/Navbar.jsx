@@ -1,32 +1,34 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { label: 'Home', href: '#', active: true },
-    { label: 'My Learnings', href: '#' },
-    { label: 'Courses', href: '#' },
-    { label: 'Talent Pool', href: '#' },
-    { label: 'Contact Us', href: '#' },
+    { label: 'Home', href: '/', active: location.pathname === '/' },
+    { label: 'My Learnings', href: '/my-learnings', active: location.pathname === '/my-learnings' },
+    { label: 'Courses', href: '/courses', active: location.pathname === '/courses' },
+    { label: 'Talent Pool', href: '/talent-pool', active: location.pathname === '/talent-pool' },
+    { label: 'Contact Us', href: '/contact', active: location.pathname === '/contact' },
   ];
 
   return (
     <nav className="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 no-underline">
+          <Link to="/" className="flex items-center gap-3 no-underline">
             <img src="logo.jpeg" alt="EquiLearn Logo" className="w-full h-7" />
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <ul className="hidden lg:flex items-center gap-10 list-none">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className={`no-underline text-base transition-colors duration-300 hover:text-[#525FE1] ${
                     link.active 
                       ? 'font-bold text-[#525FE1]' 
@@ -35,7 +37,7 @@ const Navbar = () => {
                   style={{ fontFamily: "'Rubik', sans-serif" }}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -44,7 +46,7 @@ const Navbar = () => {
           <div className="flex items-center gap-4 sm:gap-6">
             {/* Language Dropdown */}
             <div 
-              className="hidden sm:flex items-center gap-1.5 cursor-pointer text-sm font-medium text-[#1a1a2e] px-2.5 py-1.5 rounded-md hover:bg-gray-50 transition-colors duration-300 select-none"
+              className="hidden sm:flex items-center gap-1.5 cursor-pointer text-sm font-medium text-[#1a1a2e] px-2.5 py-1.5 rounded-md hover:bg-gray-50 transition-colors duration-300 select-none relative"
               style={{ fontFamily: "'Rubik', sans-serif" }}
               onClick={() => setIsLangOpen(!isLangOpen)}
             >
@@ -59,6 +61,15 @@ const Navbar = () => {
               >
                 <polyline points="6 9 12 15 18 9" />
               </svg>
+              
+              {/* Language Dropdown Menu */}
+              {isLangOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden min-w-[120px] z-50">
+                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 transition-colors">English</button>
+                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 transition-colors">Spanish</button>
+                  <button className="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 transition-colors">French</button>
+                </div>
+              )}
             </div>
 
             {/* Search Icon */}
@@ -79,7 +90,8 @@ const Navbar = () => {
             </button>
 
             {/* User Icon */}
-            <button 
+            <Link 
+              to="/profile"
               className="hidden sm:flex w-10 h-10 items-center justify-center rounded-full hover:bg-gray-50 transition-colors duration-300 bg-transparent border-none cursor-pointer"
               aria-label="User Account"
             >
@@ -93,17 +105,17 @@ const Navbar = () => {
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
               </svg>
-            </button>
+            </Link>
             
             {/* Mobile Hamburger Menu */}
             <button 
-              className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.25 rounded-full hover:bg-gray-50 transition-colors duration-300 bg-transparent border-none cursor-pointer"
+              className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-full hover:bg-gray-50 transition-colors duration-300 bg-transparent border-none cursor-pointer"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
             >
               <span 
                 className={`block w-5 h-0.5 bg-[#1a1a2e] rounded-sm transition-all duration-300 ${
-                  isMenuOpen ? 'rotate-45 translate-y-1.75' : ''
+                  isMenuOpen ? 'rotate-45 translate-y-2' : ''
                 }`} 
               />
               <span 
@@ -113,12 +125,10 @@ const Navbar = () => {
               />
               <span 
                 className={`block w-5 h-0.5 bg-[#1a1a2e] rounded-sm transition-all duration-300 ${
-                  isMenuOpen ? '-rotate-45 -translate-y-1.75' : ''
+                  isMenuOpen ? '-rotate-45 -translate-y-2' : ''
                 }`} 
               />
             </button>
-            
-            
           </div>
         </div>
       </div>
@@ -126,15 +136,15 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       <div 
         className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isMenuOpen ? 'max-h-100 opacity-100' : 'max-h-0 opacity-0'
+          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-4 pb-6 pt-2 border-t border-gray-100">
           <ul className="flex flex-col gap-4 list-none">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className={`block no-underline text-base py-2 transition-colors duration-300 hover:text-[#525FE1] ${
                     link.active 
                       ? 'font-bold text-[#525FE1]' 
@@ -144,7 +154,7 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
