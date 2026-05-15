@@ -30,8 +30,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #1A0E3A 0%, #3D1B6E 50%, #6B2FA0 100%)",
     accentColor: "#A855F7",
     emoji: "🧠",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Learn essential business management skills including strategic planning, operations, marketing, and leadership. This comprehensive course covers all aspects of modern business management with real-world case studies.",
     jobRoles: [
       "Business Analyst",
       "Operations Manager",
@@ -43,14 +42,28 @@ export const courses = [
     opportunity: 60,
     reviews: 4,
     reviewCount: 128,
-    tags: ["CSS", "Figma", "Management"],
+    tags: ["Management", "Leadership", "Strategy"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "STRATEGIC PLANNING", desc: "Learn to create effective business strategies" },
+      { num: "02", title: "OPERATIONS MGMT", desc: "Master operational excellence" },
+      { num: "03", title: "MARKETING BASICS", desc: "Understand market dynamics" },
+      { num: "04", title: "FINANCIAL MGMT", desc: "Manage business finances" },
+      { num: "05", title: "LEADERSHIP", desc: "Develop leadership skills" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    youtubeVideoId: "dQw4w9WgXcQ",
+    videoTitle: "Complete Business Management Course",
+    videoDuration: "2:15:30",
+    videoChapters: [
+      "Introduction to Business Management",
+      "Strategic Planning",
+      "Organizational Behavior",
+      "Operations Management",
+      "Marketing Fundamentals",
+      "Financial Management",
+      "Human Resource Management",
+      "Business Ethics"
+    ]
   },
   {
     id: 2,
@@ -64,8 +77,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #FFE0EC 0%, #FFC2D4 50%, #FF90B3 100%)",
     accentColor: "#FF4D8D",
     emoji: "📱",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Master digital marketing strategies including SEO, social media, content marketing, and analytics. Learn to create effective online marketing campaigns.",
     jobRoles: [
       "Digital Marketer",
       "SEO Specialist",
@@ -79,12 +91,26 @@ export const courses = [
     reviewCount: 204,
     tags: ["SEO", "Social Media", "Analytics"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "SEO BASICS", desc: "Search engine optimization fundamentals" },
+      { num: "02", title: "SOCIAL MEDIA", desc: "Social media marketing strategies" },
+      { num: "03", title: "CONTENT MARKETING", desc: "Create engaging content" },
+      { num: "04", title: "EMAIL MARKETING", desc: "Email campaign management" },
+      { num: "05", title: "ANALYTICS", desc: "Track and measure results" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/e29F5n3ea0I",
+    youtubeVideoId: "e29F5n3ea0I",
+    videoTitle: "Digital Marketing Masterclass 2024",
+    videoDuration: "3:00:00",
+    videoChapters: [
+      "Digital Marketing Overview",
+      "SEO Fundamentals",
+      "Social Media Marketing",
+      "Content Marketing Strategy",
+      "Email Marketing",
+      "Google Ads & PPC",
+      "Analytics & Reporting",
+      "Conversion Rate Optimization"
+    ]
   },
   {
     id: 3,
@@ -98,8 +124,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #C8D8FF 0%, #A0B8FF 50%, #7090FF 100%)",
     accentColor: "#4A6CF7",
     emoji: "💻",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Complete C++ programming course covering basics to advanced concepts including OOP, data structures, algorithms, and modern C++ features.",
     jobRoles: [
       "C++ Developer",
       "Systems Programmer",
@@ -113,12 +138,26 @@ export const courses = [
     reviewCount: 312,
     tags: ["C++", "Algorithms", "Data Structures"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "C++ BASICS", desc: "Syntax and fundamentals" },
+      { num: "02", title: "OOP CONCEPTS", desc: "Object-oriented programming" },
+      { num: "03", title: "DATA STRUCTURES", desc: "Arrays, lists, trees" },
+      { num: "04", title: "ALGORITHMS", desc: "Sorting and searching" },
+      { num: "05", title: "MODERN C++", desc: "C++11/14/17/20 features" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/ZzaPdXEHezY",
+    youtubeVideoId: "ZzaPdXEHezY",
+    videoTitle: "Complete C++ Programming Course",
+    videoDuration: "4:30:00",
+    videoChapters: [
+      "C++ Basics & Syntax",
+      "Variables & Data Types",
+      "Control Structures",
+      "Functions & Recursion",
+      "Arrays & Strings",
+      "Pointers & References",
+      "Object-Oriented Programming",
+      "STL & Templates"
+    ]
   },
   {
     id: 4,
@@ -132,8 +171,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #D0F5E8 0%, #A0E8CB 50%, #5CC8A0 100%)",
     accentColor: "#22C68A",
     emoji: "🌐",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Understand how the internet works, networking basics, protocols, security, and web technologies. Perfect for beginners.",
     jobRoles: [
       "Web Developer",
       "Network Engineer",
@@ -147,12 +185,26 @@ export const courses = [
     reviewCount: 98,
     tags: ["Networking", "Protocols", "Security"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "INTERNET HISTORY", desc: "Evolution of internet" },
+      { num: "02", title: "HOW IT WORKS", desc: "Internet infrastructure" },
+      { num: "03", title: "PROTOCOLS", desc: "TCP/IP, HTTP, DNS" },
+      { num: "04", title: "SECURITY", desc: "Internet safety" },
+      { num: "05", title: "WEB TECH", desc: "Modern web technologies" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/zN8YNNHcaZc",
+    youtubeVideoId: "zN8YNNHcaZc",
+    videoTitle: "Internet Basics Explained",
+    videoDuration: "1:45:00",
+    videoChapters: [
+      "History of Internet",
+      "How Internet Works",
+      "IP Addresses & DNS",
+      "HTTP/HTTPS Protocols",
+      "Web Browsers",
+      "Internet Security",
+      "Cloud Computing",
+      "Future of Internet"
+    ]
   },
   {
     id: 5,
@@ -166,8 +218,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #FFF3C8 0%, #FFE08A 50%, #FFD060 100%)",
     accentColor: "#F59E0B",
     emoji: "🌟",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Enhance your personality, communication skills, confidence, and leadership abilities. Transform yourself personally and professionally.",
     jobRoles: [
       "Life Coach",
       "HR Trainer",
@@ -181,12 +232,26 @@ export const courses = [
     reviewCount: 87,
     tags: ["Soft Skills", "Communication", "Leadership"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "SELF AWARENESS", desc: "Know yourself better" },
+      { num: "02", title: "COMMUNICATION", desc: "Effective communication" },
+      { num: "03", title: "CONFIDENCE", desc: "Build self-confidence" },
+      { num: "04", title: "LEADERSHIP", desc: "Leadership qualities" },
+      { num: "05", title: "GOAL SETTING", desc: "Achieve your goals" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/YwZLIbE7ZjA",
+    youtubeVideoId: "YwZLIbE7ZjA",
+    videoTitle: "Personality Development Mastery",
+    videoDuration: "2:30:00",
+    videoChapters: [
+      "Self Awareness",
+      "Communication Skills",
+      "Body Language",
+      "Confidence Building",
+      "Public Speaking",
+      "Leadership Qualities",
+      "Time Management",
+      "Goal Setting"
+    ]
   },
   {
     id: 6,
@@ -200,8 +265,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #C8E8FF 0%, #90C8FF 50%, #4A9FFF 100%)",
     accentColor: "#0EA5E9",
     emoji: "📲",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Learn to build Android apps using Kotlin and Java. Master Android Studio, UI design, databases, and app deployment.",
     jobRoles: [
       "Android Developer",
       "Mobile Engineer",
@@ -215,12 +279,26 @@ export const courses = [
     reviewCount: 267,
     tags: ["Kotlin", "Java", "Android SDK"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "ANDROID BASICS", desc: "Android fundamentals" },
+      { num: "02", title: "UI DESIGN", desc: "User interface design" },
+      { num: "03", title: "DATABASES", desc: "Local data storage" },
+      { num: "04", title: "API INTEGRATION", desc: "Connect to servers" },
+      { num: "05", title: "DEPLOYMENT", desc: "Publish your app" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/fis26HtD0P0",
+    youtubeVideoId: "fis26HtD0P0",
+    videoTitle: "Android Development Bootcamp",
+    videoDuration: "5:00:00",
+    videoChapters: [
+      "Android Studio Setup",
+      "Kotlin Basics",
+      "UI/UX Design",
+      "Activities & Fragments",
+      "Database Integration",
+      "API Integration",
+      "Publishing Apps",
+      "Advanced Features"
+    ]
   },
   {
     id: 7,
@@ -234,11 +312,10 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #E0D4FF 0%, #C4A8FF 50%, #9D6FFF 100%)",
     accentColor: "#7C3AED",
     emoji: "🎨",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Master HTML5, CSS3, JavaScript, and React.js. Build responsive and interactive web applications.",
     jobRoles: [
       "Front-End Developer",
-      "Back-End Developer",
+      "React Developer",
       "Web Designer",
       "Full-Stack Developer",
       "UI/UX Specialist",
@@ -247,14 +324,28 @@ export const courses = [
     opportunity: 72,
     reviews: 4,
     reviewCount: 189,
-    tags: ["CSS", "Figma", "UI/UX Development"],
+    tags: ["React", "JavaScript", "Tailwind"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "HTML5", desc: "Structure web pages" },
+      { num: "02", title: "CSS3", desc: "Style your websites" },
+      { num: "03", title: "JAVASCRIPT", desc: "Add interactivity" },
+      { num: "04", title: "REACT.JS", desc: "Build modern apps" },
+      { num: "05", title: "RESPONSIVE", desc: "Mobile-friendly design" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/W6NZfCO5SIk",
+    youtubeVideoId: "W6NZfCO5SIk",
+    videoTitle: "Front End Development Complete Guide",
+    videoDuration: "6:00:00",
+    videoChapters: [
+      "HTML5 Fundamentals",
+      "CSS3 Styling",
+      "JavaScript Basics",
+      "React.js Introduction",
+      "Responsive Design",
+      "State Management",
+      "API Integration",
+      "Deployment"
+    ]
   },
   {
     id: 8,
@@ -268,8 +359,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #FFD8C8 0%, #FFB8A0 50%, #FF8A70 100%)",
     accentColor: "#F97316",
     emoji: "📊",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Learn data science with Python, statistics, machine learning, and data visualization. Start your journey in AI and data science.",
     jobRoles: [
       "Data Scientist",
       "ML Engineer",
@@ -283,12 +373,26 @@ export const courses = [
     reviewCount: 445,
     tags: ["Python", "ML", "Statistics"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "PYTHON", desc: "Programming for data science" },
+      { num: "02", title: "STATISTICS", desc: "Statistical analysis" },
+      { num: "03", title: "MACHINE LEARNING", desc: "ML algorithms" },
+      { num: "04", title: "VISUALIZATION", desc: "Data visualization" },
+      { num: "05", title: "REAL PROJECTS", desc: "Hands-on practice" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/ua-CiDNNj30",
+    youtubeVideoId: "ua-CiDNNj30",
+    videoTitle: "Data Science Fundamentals Course",
+    videoDuration: "4:45:00",
+    videoChapters: [
+      "Data Science Introduction",
+      "Python for Data Science",
+      "Statistics & Probability",
+      "Data Visualization",
+      "Machine Learning Basics",
+      "SQL for Data Analysis",
+      "Real-world Projects",
+      "Career Guidance"
+    ]
   },
   {
     id: 9,
@@ -302,8 +406,7 @@ export const courses = [
     bgGradient: "linear-gradient(135deg, #D4F0FF 0%, #A8DCFF 50%, #70C0FF 100%)",
     accentColor: "#0284C7",
     emoji: "☁️",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+    description: "Master cloud computing with AWS, Azure, Docker, and Kubernetes. Learn to deploy and manage cloud infrastructure.",
     jobRoles: [
       "Cloud Architect",
       "DevOps Engineer",
@@ -317,12 +420,26 @@ export const courses = [
     reviewCount: 321,
     tags: ["AWS", "Azure", "Docker"],
     infographic: [
-      { num: "01", title: "FIRST TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "02", title: "SECOND TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "03", title: "THIRD TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "04", title: "FOURTH TITLE", desc: "Lorem ipsum dolor sit amet" },
-      { num: "05", title: "FIFTH TITLE", desc: "Lorem ipsum dolor sit amet" },
+      { num: "01", title: "CLOUD BASICS", desc: "Cloud fundamentals" },
+      { num: "02", title: "AWS", desc: "Amazon Web Services" },
+      { num: "03", title: "AZURE", desc: "Microsoft Azure" },
+      { num: "04", title: "DOCKER", desc: "Containerization" },
+      { num: "05", title: "DEVOPS", desc: "DevOps practices" },
     ],
+    youtubeUrl: "https://www.youtube.com/embed/ulprqHHW4ng",
+    youtubeVideoId: "ulprqHHW4ng",
+    videoTitle: "Cloud Computing Complete Course",
+    videoDuration: "3:30:00",
+    videoChapters: [
+      "Cloud Computing Overview",
+      "AWS Fundamentals",
+      "Azure Basics",
+      "Google Cloud Platform",
+      "Docker & Containers",
+      "Kubernetes",
+      "DevOps Practices",
+      "Cloud Security"
+    ]
   },
 ];
 

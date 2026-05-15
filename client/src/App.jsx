@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
 import CourseDetails from './pages/CourseDetails';
+import CourseContent from './pages/CourseContent';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/course/:id" element={<CourseDetails />} />
+            {/* Route now includes :id so CourseContent knows which course to load */}
+            <Route path="/course/:id/content" element={<CourseContent />} />
           </Routes>
         </main>
         <Footer />
