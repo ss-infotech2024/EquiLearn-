@@ -161,8 +161,8 @@ export default function CourseDetails() {
         </div>
       </div>
 
-      {/* Enroll Button - Centered */}
-      <div className="flex justify-center items-center px-10 mb-15">
+      {/* Centered ENROLL NOW Button */}
+      <div className="flex justify-center items-center w-full px-10 mb-15">
         <button
           className="w-[280px] py-[18px] bg-gradient-to-r from-[#4A6CF7] to-[#7C3AED] text-white text-lg font-extrabold tracking-wide border-none rounded-lg cursor-pointer text-center shadow-lg transition-all duration-200 hover:-translate-y-0.5"
           style={{
@@ -172,6 +172,7 @@ export default function CourseDetails() {
           }}
           onMouseEnter={() => setHoverEnroll(true)}
           onMouseLeave={() => setHoverEnroll(false)}
+          onClick={() => navigate(`/course/${course.id}/content`)}
         >
           ENROLL NOW
         </button>
