@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
+import logo from '../assets/logo.jpeg'; 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 no-underline">
-            <img src="logo.jpeg" alt="EquiLearn Logo" className="w-full h-7" />
+            <img src={logo} alt="EquiLearn Logo" className="w-full h-7" />
           </Link>
 
           {/* Desktop Navigation Links */}
