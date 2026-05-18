@@ -5,7 +5,12 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
 import CourseDetails from './pages/CourseDetails';
+
+import Profile from './pages/ProfilePage';
+import TimelinePage from './pages/TimelinePage';
+
 import CourseContent from './pages/CourseContent';
+
 
 function App() {
   return (
@@ -17,8 +22,13 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/course/:id" element={<CourseDetails />} />
+
+            <Route path="/profile" element={<Profile />} />
+            <Route path="timeline" element={<TimelinePage />} />
+
             {/* Route now includes :id so CourseContent knows which course to load */}
             <Route path="/course/:id/content" element={<CourseContent />} />
+
           </Routes>
         </main>
         <Footer />
